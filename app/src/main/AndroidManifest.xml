@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.samriddhi.colorit" >
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Page2"
+            android:label="@string/title_activity_page2"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samriddhi.colorit.MainActivity" />
+        </activity>
+        <activity
+            android:name=".Test1"
+            android:label="@string/title_activity_test1"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Page2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samriddhi.colorit.Page2" />
+        </activity>
+        <activity
+            android:name=".Test2"
+            android:label="@string/title_activity_test2"
+            android:screenOrientation="portrait"
+
+           android:parentActivityName=".Test1" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samriddhi.colorit.Test1" />
+        </activity>
+        <activity
+            android:name=".Test3"
+            android:label="@string/title_activity_test3"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Test2" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samriddhi.colorit.Test2" />
+        </activity>
+        <activity
+            android:name=".Test4"
+            android:label="@string/title_activity_test4"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Test3" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samriddhi.colorit.Test3" />
+        </activity>
+        <activity
+            android:name=".Test5"
+            android:label="@string/title_activity_test5"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Test4" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samriddhi.colorit.Test4" />
+        </activity>
+        <activity
+            android:name=".Final"
+            android:label="@string/title_activity_final"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Test5" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.samriddhi.colorit.Test5" />
+        </activity>
+        <activity
+            android:name=".Instructions"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_instructions" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="40dp"
+    tools:context="com.example.samriddhi.colorit.Final">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultText"
+        android:maxLength="100"
+        android:maxLines="2"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:id="@+id/finalimage1"
+        android:src="@drawable/t"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Red Filter"
+        android:id="@+id/red"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:maxWidth="72dp"
+        android:background="#fff26c4f"
+        android:textColor="#ffffffff"
+        android:minWidth="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green Filter"
+        android:id="@+id/green"
+        android:maxWidth="80dp"
+        android:layout_alignTop="@+id/red"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff"
+        android:background="#ff3bb878"
+        android:minWidth="40dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blue Filter"
+        android:id="@+id/blue"
+        android:layout_alignTop="@+id/green"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:maxWidth="80dp"
+        android:textColor="#ffffffff"
+        android:background="#ff5574b9"
+        android:minWidth="40dp" /><![CDATA[
+
+
+
+
+
+    " />
+
+
+
+]]>
+</RelativeLayout>
